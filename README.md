@@ -298,7 +298,7 @@ The following section are automatically applied by the code formatter in Elixir 
 ### Modules
 
 * <a name="module-layout"></a>
-  Use a consistent structure when calling `use`/`import`/`alias`/`require`: call them in this order and group multiple calls to each of them.
+  Use a consistent structure when calling `use`/`import`/`alias`/`require`: call them in this order, group multiple calls to each of them and sort them alphabetically.
   <sup>[[link](#module-layout)]</sup>
 
   ```elixir
@@ -307,8 +307,8 @@ The following section are automatically applied by the code formatter in Elixir 
   import Bitwise
   import Kernel, except: [length: 1]
 
-  alias Mix.Utils
   alias MapSet, as: Set
+  alias Mix.Utils
 
   require Logger
   ```
